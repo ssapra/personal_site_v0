@@ -1,0 +1,330 @@
+html
+	font-family: 'Open Sans', sans-serif
+	font-size: 14px
+	font-weight: 300
+.nav-link
+	text-decoration: underline
+	&:hover
+		cursor: pointer
+
+html, head, body
+	overflow-x: hidden
+.header
+	height: 60px
+	overflow: visible
+	text-align: center
+	position: fixed
+	top: 0
+	z-index: 9999
+	width: 100%
+	.container
+		position: relative
+		// max-width: 1104px
+		margin: 0 0
+		height: 60px
+		padding: 0 2%
+		background-color: gray
+		opacity: 0.9
+		background: rgb(0, 0, 0) transparent
+		background: rgba(0, 0, 0, 0.9)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
+		ul
+			list-style: none outside
+			display: inline-block
+			font-size: 14px
+			float: left
+			margin-top: 0
+			position: relative
+			li
+				display: inline-block
+				font-size: 14px
+				line-height: 1
+				padding: 23px 30px 21px 25px
+				a
+					color: white
+					text-decoration: none
+
+.content
+	margin-left: 12%
+	color: #233138
+	overflow-x: hidden
+
+#skills
+	background-color: white
+
+#home
+	overflow: hidden
+
+.home-container
+	margin-left: 0
+
+.background-image
+	width: 108%
+	position: relative
+	margin-top: -10%
+
+.home
+	position: absolute
+	top: 0
+	height: 100%
+	width: 54%
+	padding-left: 2%
+	background-color: gray
+	opacity: 0.6
+	background: rgb(0, 0, 0) transparent
+	background: rgba(0, 0, 0, 0.6)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"
+
+	.home-details
+		padding: 9% 0
+		text-align: left
+		line-height: 300%
+		color: white
+		h1
+			font-size: 4.3em
+			font-weight: 300
+			letter-spacing: 0.05em
+			line-height: 1.3em
+			text-transform: uppercase
+			margin-bottom: 10%
+		p
+			font-size: 1.5em
+			a
+				color: white
+			i
+				padding-left: 3%
+
+.contact-container
+	top: -50px
+
+.quotes
+	text-align: left
+	margin-top: -2%
+	i
+		padding: 0 3%
+	p
+		border-top: 2px solid white
+		font-size: 1.05em
+		line-height: 150%
+		padding: 8% 5%
+		color: white
+
+
+#experience
+	margin: 100px auto
+
+	.viewpoint, #details p
+		position: relative
+		width: 73%
+		margin: 10px auto 0 auto
+		font-size: 18px
+		line-height: 1.3
+		color: #444
+		font-weight: 300
+		-webkit-font-smoothing: antialiased
+		margin-bottom: 10px
+		letter-spacing: 1.1px
+
+	.viewpoint
+		display: none
+
+	#details
+		margin-top: 50px
+		display: none
+		position: relative
+
+		p
+			text-align: center
+
+		.work-images
+			text-align: center
+			.image-block
+				display: inline-block
+			img
+				width: 200px
+				padding: 0 20px
+				-webkit-transition: opacity 0.2s ease
+				-moz-transition: opacity 0.2s ease
+				-o-transition: opacity 0.2s ease
+				transition: opacity 0.2s ease
+				&:hover
+					opacity: 0.5
+
+	.opower-screenshot
+		width: 33%
+		margin-top: -8%
+
+	.opower, .enova
+		display: none
+
+	.brand
+		background: transparent url(//d3ltyjzd0urran.cloudfront.net/images/layout/header-logo.svg) no-repeat top left
+		background-size: 100%
+		height: 35px
+		font: 0/0 a
+		color: transparent
+		text-shadow: none
+		background-color: transparent
+		border: 0
+		margin: 16px 10px
+		padding: 0
+		width: 200px
+	h1
+		text-align: center
+	h2
+		color: #114E84
+		font-size: 2.5em
+
+	.work-experience
+		padding: 2% 6%
+		width: 100%
+		.work-details
+			margin-left: 10px
+			h2
+				font-size: 1.2em
+				margin-bottom: 5px
+			h3
+				font-style: bold
+				font-size: 0.8em
+			h4
+				font-style: italic
+				font-size: 0.8em
+
+		.experience-stories
+			float: left
+			width: 45%
+			padding-top: 3%
+			.story
+				display: inline-block
+				padding-bottom: 4%
+				i
+					vertical-align: middle
+					margin-bottom: 65px
+					min-width: 30px
+				p
+					vertical-align: center
+					width: 75%
+					padding: 15px 0
+					line-height: 130%
+					font-size: 1.2em
+					display: inherit
+
+#projects
+	margin-left: 12%
+	background-color: #f7f7f7
+
+	.heading
+		display: none
+		margin: 0
+		padding: 0.67em 0
+
+	.viewpoint, #details p
+		position: relative
+		width: 73%
+		margin: 10px auto 0 auto
+		font-size: 18px
+		line-height: 1.3
+		color: #444
+		font-weight: 300
+		-webkit-font-smoothing: antialiased
+		margin-bottom: 10px
+		letter-spacing: 1.1px
+
+	.viewpoint
+		display: none
+
+	#details
+		margin-top: 50px
+		display: none
+		position: relative
+
+		p
+			text-align: center
+
+		.work-images
+			text-align: center
+			.image-block
+				display: inline-block
+			img
+				width: 150px
+				padding: 10px
+				-webkit-transition: opacity 0.2s ease
+				-moz-transition: opacity 0.2s ease
+				-o-transition: opacity 0.2s ease
+				transition: opacity 0.2s ease
+				&:hover
+					opacity: 0.5
+
+	h1
+		text-align: center
+
+.project-entry
+	text-align: center
+	h2
+		font-weight: bold
+		font-size: 1.3em
+		margin-bottom: 1%
+		color: #233138
+		a
+			text-decoration: none
+			color: #233138
+	p
+		line-height: 120%
+		font-size: 1.2em
+		width: 80%
+		margin: 0 auto
+	.project-image
+		padding-top: 3%
+		width: 33%
+		height: 75%
+
+#contact
+	.container
+		background: none
+		opacity: 1
+		width: 85%
+
+.left-side
+	padding-top: 5%
+	vertical-align: top
+	height: inherit
+	width: 45%
+	display: inline-block
+	margin-right: 5%
+	color: white
+	h1
+		text-align: center
+	ul.icons
+		width: 25%
+	ul.contact
+		width: 50%
+	ul
+		// margin: 4% 0 0 25%
+		float: left
+		display: block
+		width: 45%
+		li
+			// padding-bottom: 8%
+			font-size: 1.2em
+			color: #233138
+			display: inline-block
+			width: 100%
+			color: white
+			i
+				min-width: 20%
+				display: inherit
+				font-size: 2em
+				padding-right: 1em
+			a
+				text-decoration: none
+				color: #233138
+				display: inherit
+				color: white
+				min-width: 20%
+				&:hover
+					cursor: pointer
+					color: #800000
+			p
+				display: inline

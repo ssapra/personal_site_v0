@@ -1,0 +1,39 @@
+# ---
+# development:
+#   cloud_name: hvqqwrowv
+#   api_key: '523132256714139'
+#   api_secret: qTel9YXn4t5e0gB16B6rrUis-rY
+#   enhance_image_tag: true
+#   static_image_support: false
+# production:
+#   cloud_name: hvqqwrowv
+#   api_key: '523132256714139'
+#   api_secret: qTel9YXn4t5e0gB16B6rrUis-rY
+#   enhance_image_tag: true
+#   static_image_support: true
+# test:
+#   cloud_name: hvqqwrowv
+#   api_key: '523132256714139'
+#   api_secret: qTel9YXn4t5e0gB16B6rrUis-rY
+#   enhance_image_tag: true
+#   static_image_support: false
+#
+  ---
+development:
+  cloud_name: dr5ehtklz
+  api_key: '564279194336925'
+  api_secret: GTe1hARb7TM5Xwq64SyxlVnI97Y
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dr5ehtklz
+  api_key: '564279194336925'
+  api_secret: GTe1hARb7TM5Xwq64SyxlVnI97Y
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dr5ehtklz
+  api_key: '564279194336925'
+  api_secret: GTe1hARb7TM5Xwq64SyxlVnI97Y
+  enhance_image_tag: true
+  static_image_support: false

@@ -1,0 +1,26 @@
+.content.home-container
+	#home
+		=image_tag "profile.jpg", :class => "background-image"
+		.home
+			.home-details
+				%h1 Hi, I'm Shaan Sapra
+				%p Reach out to me:
+				.contact-container
+					.left-side
+						%ul.icons
+							%li
+								%i.fa.fa-phone-square
+							%li
+								%i.fa.fa-envelope
+							%li
+								%i.fa.fa-file
+							%li
+								%i.fa.fa-linkedin-square
+							%li
+								%i.fa.fa-instagram
+						%ul.contact
+							%li= link_to "<p>(630) 696 8303</p>".html_safe, 'call://+6306968303'
+							%li= link_to "<p>shaanfire@gmail.com</p>".html_safe, 'mailto:shaanfire@gmail.com'
+							%li= link_to "<p>Resume</p>".html_safe, "https://www.dropbox.com/s/jic0o6kl6bxhut3/Shaan%20Sapra%20Resume.pdf?dl=0", target: '_'
+							%li= link_to "<p>LinkedIn</p>".html_safe, 'http://www.linkedin.com/in/shaansapra', target: '_'
+							%li= link_to "<p>Instagram</p>".html_safe, 'https://instagram.com/profsapra', target: '_'

@@ -7,8 +7,9 @@ gem 'pg'
 gem "haml-rails", "~> 0.9"
 gem 'newrelic_rpm'
 gem 'thin'
-
+gem 'sprockets_better_errors'
 gem 'font-awesome-sass'
+
 group :development do
   gem 'sqlite3'
 end

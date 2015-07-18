@@ -1,14 +1,3 @@
-GIT
-  remote: git://github.com/rails/sass-rails.git
-  revision: 8588b7b31d708a91516ae3bda0f57601a860ec28
-  branch: 4-0-stable
-  specs:
-    sass-rails (4.0.5)
-      railties (>= 4.0.0, < 5.0)
-      sass (~> 3.2.2)
-      sprockets (~> 2.8, < 3.0)
-      sprockets-rails (~> 2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -49,7 +38,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    arel (6.0.0)
+    arel (6.0.2)
     aws_cf_signer (0.1.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -68,12 +57,22 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
-    compass (0.12.7)
+    compass (1.0.3)
       chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
-    compass-rails (2.0.0)
-      compass (>= 0.12.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
+    compass-rails (2.0.4)
+      compass (~> 1.0.0)
+      sass-rails (<= 5.0.1)
+      sprockets (< 2.13)
     daemons (1.2.3)
     debug_inspector (0.0.2)
     domain_name (0.5.24)
@@ -81,9 +80,9 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.5.2)
+    ffi (1.9.10)
     font-awesome-sass (4.3.2.1)
       sass (~> 3.2)
-    fssm (0.2.10)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     haml (4.0.6)
@@ -103,7 +102,7 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    jbuilder (2.3.0)
+    jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.4)
@@ -120,7 +119,7 @@ GEM
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.7.0)
-    multi_json (1.11.1)
+    multi_json (1.11.2)
     netrc (0.10.3)
     newrelic_rpm (3.12.1.298)
     nokogiri (1.6.6.2)
@@ -161,31 +160,37 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    rb-fsevent (0.9.5)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
     rdoc (4.2.0)
-      json (~> 1.4)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     ruby_parser (3.7.0)
       sexp_processor (~> 4.1)
-    sass (3.2.19)
+    sass (3.4.16)
+    sass-rails (5.0.1)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (~> 1.1)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     sexp_processor (4.6.0)
     spring (1.3.6)
-    sprockets (2.12.3)
+    sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.3.1)
+    sprockets-rails (2.3.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sprockets_better_errors (0.0.4)
-      sprockets-rails (>= 1.0.0)
     sqlite3 (1.3.10)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
@@ -202,7 +207,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
-    web-console (2.1.3)
+    web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
@@ -216,7 +221,8 @@ DEPENDENCIES
   byebug
   cloudinary
   coffee-rails (~> 4.1.0)
-  compass-rails
+  compass (= 1.0.3)
+  compass-rails (= 2.0.4)
   font-awesome-sass
   haml-rails (~> 0.9)
   jbuilder (~> 2.0)
@@ -227,11 +233,9 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.2.2)
   rails_12factor
-  sass-rails!
+  sass-rails (= 5.0.1)
   sdoc (~> 0.4.0)
   spring
-  sprockets
-  sprockets_better_errors
   sqlite3
   thin
   uglifier (>= 1.3.0)

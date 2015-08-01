@@ -2,8 +2,8 @@
   .container
     %ul
       %li
-        %a.nav-link{'data-href' => '/'} HOME
+        =link_to "HOME", "/", remote: true, class: 'nav-link'
       %li
-        %a.nav-link{'data-href' => "/experience"} EXPERIENCE
+        =link_to "EXPERIENCE", "/experience", remote: true, class: 'nav-link'
       %li
-        %a.nav-link{'data-href' => "/projects"} PROJECTS
+        =link_to "PROJECTS", "/projects", remote: true, class: 'nav-link'

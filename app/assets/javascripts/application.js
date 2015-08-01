@@ -14,3 +14,11 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
+
+var divElement = $('.content').children()[0];
+$(divElement).css("min-width",$(window).width() - $('nav').width());
+
+$(window).resize(function(){
+  var divElement = $('.content').children()[0];
+  $(divElement).css("min-width",$(window).width() - $('nav').width());
+})

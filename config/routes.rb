@@ -3,7 +3,6 @@ Website::Application.routes.draw do
   get '/projects' => 'pages#projects', as: :projects
   get '/experience' => 'pages#experience', as: :experience
   get '/skills' => 'pages#skills', as: :skills
-  get '/contact' => 'pages#contact', as: :contact
   get '/download' => 'pages#download_pdf'
   get '/enova' => 'pages#enova'
   get '/opower' => 'pages#opower'

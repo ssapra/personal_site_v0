@@ -7,6 +7,20 @@
 				%p I'm a software developer in Chicago.
 				%p
 					Check out more about my
-					%a.nav-link{'data-href' => "/experience"} experience
+					=link_to 'experience', '/experience', class: 'nav-link', remote: true
 					and past
-					%a.nav-link{'data-href' => "/projects"} projects.
+					=link_to 'projects', '/projects', class: 'nav-link', remote: true
+				%p Reach out to me:
+				.contact-container
+					.left-side
+						%ul.icons
+							%li
+								%i.fa.fa-envelope
+							%li
+								%i.fa.fa-github-square
+							%li
+								%i.fa.fa-linkedin-square
+						%ul.contact
+							%li= link_to "<p>shaanfire@gmail.com</p>".html_safe, 'mailto:shaanfire@gmail.com'
+							%li= link_to "<p>Github</p>".html_safe, 'https://github.com/ssapra', target: '_'
+							%li= link_to "<p>LinkedIn</p>".html_safe, 'http://www.linkedin.com/in/shaansapra', target: '_'

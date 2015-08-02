@@ -1,6 +1,4 @@
 class PagesController < ApplicationController
-  caches_action :home
-
   def home
   end
 

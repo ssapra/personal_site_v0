@@ -6,7 +6,6 @@ gem "haml-rails", "~> 0.9"
 gem 'puma'
 gem 'font-awesome-sass'
 
-
 gem 'cloudinary'
 
 gem 'sass-rails', '5.0.1'
@@ -17,12 +16,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 
 gem 'jquery-rails'
-gem 'jquery-ui-rails'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'actionpack-action_caching'
-
+gem 'actionpack-page_caching'
 
 group :development, :test do
   gem 'byebug'

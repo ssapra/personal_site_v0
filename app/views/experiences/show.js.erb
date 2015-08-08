@@ -1,0 +1,4 @@
+$('.work').remove()
+$('#experience').append("<%= j(render(params[:name])) %>")
+$(".<%= params[:name] %>").fadeIn(400)
+$('html, body').animate({scrollTop:$(document).height()}, 'slow');

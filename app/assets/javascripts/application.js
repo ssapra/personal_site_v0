@@ -11,7 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery-ui
 //= require jquery_ujs
 //= require_tree .
 
@@ -21,4 +20,19 @@ $(divElement).css("min-width",$(window).width() - $('nav').width());
 $(window).resize(function(){
   var divElement = $('.content').children()[0];
   $(divElement).css("min-width",$(window).width() - $('nav').width());
+})
+
+if (window.location.pathname != "/") {
+  $('h1').fadeIn(400);
+  setTimeout(function (){
+    $('#details').fadeIn({queue: false, duration: 'fast'});
+    $('.viewpoint').fadeIn({queue: false, duration: 'fast'});
+    $('#details').animate({ top: "-10px" }, 'fast');
+    $('.viewpoint').animate({ top: "10px" }, 'fast');
+  }, 300)
+}
+
+$(document).on('click', '#happyhealth', function(){
+  window.location = '/projects';
+  $("a[href='/projects/happyhealth']").trigger("click")
 })

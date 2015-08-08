@@ -1,8 +1,0 @@
-$('.content').html("<%= j(render 'experience') %>");
-$('h1').fadeIn(400);
-setTimeout(function (){
-  $('#details').fadeIn({queue: false, duration: 'fast'});
-  $('.viewpoint').fadeIn({queue: false, duration: 'fast'});
-  $('#details').animate({ top: "-10px" }, 'fast');
-  $('.viewpoint').animate({ top: "10px" }, 'fast');
-}, 300)
